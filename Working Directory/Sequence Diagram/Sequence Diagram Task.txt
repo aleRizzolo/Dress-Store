@@ -1,0 +1,27 @@
+Sequence Diagram da svolgere per il RAD
+
+
+1)Registrazione(Riccardo)
+2)Login(Riccardo)
+3)Visualizza catalogo(Alessio)
+4)Aggiungi prodotto al carrello(Davide)
+5)Completa un ordine(Davide)
+6)Effettua reso(Davide)
+7)Aggiungi carta di credito(Alessio)
+8)Visualizza carta di credito(Alessio)
+9)Modifica carta di credito(Alessio)
+10) Visualizza storico acquisti(Riccardo)
+
+Proprietario:
+11)Inserisci prodotto(Alessio)
+12)Elimina prodotto(Alessio)
+
+Magazziere
+13)Comunica esaurimento prodotto(Riccardo)
+14)Visualizza scorte in esaurimento(Riccardo)
+15)Comunica completamento reso(Davide)
+
+Gestore Marketing
+16)Scegli il prezzo di un prodotto(Riccardo)
+17)Inserisci promozione(Davide)
+18)Gestione reso(Davide)
