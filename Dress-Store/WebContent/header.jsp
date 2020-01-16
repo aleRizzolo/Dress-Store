@@ -38,13 +38,7 @@
 				break;
 	    	
 	    		
-    		case 3: 
-    			aut="Logout";
-	    		areaUt="managerPage.jsp";
-	    		autCtrl="LogoutControl";
-	    		break;
-	    	default:
-	    		areaUt="login.jsp";
+    		
 		}
     		
     		}
