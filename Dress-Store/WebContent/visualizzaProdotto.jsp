@@ -27,7 +27,9 @@ if(request.getSession().getAttribute("tipo") != null){
 
 
 <%
-    	
+    	ProdottoBean prod = (ProdottoBean) request.getAttribute("product");
+		request.getSession().setAttribute("product", prod);
+		DecimalFormat formatter = new DecimalFormat("#0.00");
 %>    
 	<div class="container">
 	
