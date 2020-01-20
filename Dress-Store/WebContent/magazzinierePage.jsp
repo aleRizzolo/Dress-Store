@@ -249,7 +249,7 @@ $(document).ready(function(){
 	       break;
 				
 		}
- }
+ 
  </script>
  <br>
  <hr>
