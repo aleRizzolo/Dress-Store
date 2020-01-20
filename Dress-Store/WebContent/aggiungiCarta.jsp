@@ -33,6 +33,52 @@ if(request.getSession().getAttribute("tipo") != null){
       <fieldset>
       
       
+        <div class="form-group">
+          <div class="col-md-6">
+            <label class="control-label" for="nome">Nome</label>
+            <input type="text" name="nome" class="form-control" placeholder="Mario"   oninput ="controlloNome()" >
+            </div>
+          </div>
+
+        <div class="form-group">
+            <div class="col-md-6">
+              <label class="control-label" for="surname">Cognome</label>
+              <input type="text" name="cognome" class="form-control" placeholder="Rossi" required oninput ="controlloCognome()">
+            </div>
+          </div>
+
+         
+
+          <div class="form-group">
+            <div class="col-md-6">
+              <label class="control-label" for="mobile">Numero Carta</label>
+              
+                <input type="text" name="numero_carta" class="form-control" placeholder="1234 5678 9876 5432"  required oninput ="controlloNumero()">
+             
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-md-6">
+              <label class="control-label" for="email">CVV</label>
+              <input type="text" name="cvv" class="form-control" placeholder="123"  required oninput ="controlloCvv()">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-md-6">
+              <label class="control-label" for="district">Data di Scadenza</label>
+              <input type="text" name="anno" class="form-control" placeholder="anno" required oninput ="controlloAnno()" >
+              <input type="text" name="mese" class="form-control" placeholder="mese"  required oninput ="controlloMese()">
+              <input type="text" name="giorno" class="form-control" placeholder="giorno"  required oninput ="controlloGiorno()">
+            </div>
+          </div>     
+          <div class="form-group">
+            <div class="col-md-12">
+              <button type="button" value ="Aggiungi" class="btn btn-primary btn-lg btn-block info" onclick="validazione();"name="invia">INVIA</button>
+               <button class="btn btn-primary btn-lg btn-block info" type="reset" value="Cancella" name="reset"> RESET</button>
+            </div>
+          </div>   
         
       </fieldset> 
     </form>
