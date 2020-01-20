@@ -20,16 +20,14 @@ if(request.getSession().getAttribute("tipo") != null){
 	int tipo = (int) session.getAttribute("tipo");
 	if( tipo ==2 || tipo ==3 || tipo == 4)
 		response.sendRedirect("index.jsp");
-}
+
 %>
 	<form action="CartControl" method="get">
 	
 
 
 <%
-    	ProdottoBean prod = (ProdottoBean) request.getAttribute("product");
-		request.getSession().setAttribute("product", prod);
-		DecimalFormat formatter = new DecimalFormat("#0.00");
+    	
 %>    
 	<div class="container">
 	
