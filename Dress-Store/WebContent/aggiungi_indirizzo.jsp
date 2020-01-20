@@ -32,7 +32,67 @@ if(request.getSession().getAttribute("tipo") != null){
       
       <fieldset>
       
-      
+       <div class="form-group">
+          <div class="col-md-6">
+            <label class="control-label" for="nome">Nome</label>
+            <input type="text" name="nome" class="form-control" placeholder="Mario"  required oninput ="controlloNome()">
+            </div>
+          </div>
+
+        <div class="form-group">
+            <div class="col-md-6">
+              <label class="control-label" for="surname">Cognome</label>
+              <input type="text" name="cognome" class="form-control" placeholder="Rossi" required oninput ="controlloCognome()">
+            </div>
+          </div>
+
+         
+
+          <div class="form-group">
+            <div class="col-md-6">
+              <label class="control-label" for="mobile">Cellulare</label>
+              <div class="input-group">
+                <span class="input-group-addon">+39</span>
+                <input type="text" name="cellulare" class="form-control" placeholder="3334576298" required oninput ="controlloCellulare()">
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-md-6">
+              <label class="control-label" for="email">Città</label>
+              <input type="text" name="citta" class="form-control" placeholder="Napoli" required oninput ="controlloCitta()">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-md-6">
+              <label class="control-label" for="district">Via</label>
+              <input type="text" name="via" class="form-control" placeholder="Via Roma"  required oninput ="controlloVia()">
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <div class="col-md-6">
+              <label class="control-label" for="district">Cap</label>
+              <input type="text" name="cap" class="form-control" placeholder="80100"  required oninput ="controlloCap()">
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <div class="col-md-6">
+              <label class="control-label" for="district">Provincia</label>
+              <input type="text" name="provincia" class="form-control" placeholder="NA"  required oninput ="controlloProvincia()">
+            </div>
+          </div>
+        
+        
+          <div class="form-group">
+            <div class="col-md-12">
+              <button type="button" value ="Aggiungi" class="btn btn-primary btn-lg btn-block info" onclick="validazione();">INVIA</button>
+              <button class="btn btn-primary btn-lg btn-block info" type="reset" value="Cancella" name="reset"> RESET</button>
+            </div>
+          </div>     
        
       </fieldset> 
     </form>
