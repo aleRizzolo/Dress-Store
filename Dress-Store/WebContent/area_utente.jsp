@@ -103,7 +103,7 @@
               <li><span class="fa-li"><i class="fas fa-check" ></i></span><strong>Fai il Logout dal sito</strong></li>
               
             </ul>
-            <a href="LogoutControl" class="btn btn-block btn-primary text-uppercase">Al più presto</a>
+            <a href="LogoutControl" class="btn btn-block btn-primary text-uppercase">A presto</a>
           </div>
         </div>
       </div>
