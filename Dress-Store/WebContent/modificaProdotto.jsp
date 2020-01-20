@@ -97,6 +97,38 @@ ProdottoBean prodotto= (ProdottoBean) session.getAttribute("product");
 		</div>
 	</div>
 	<%@include file="footer.jsp" %>
+	<script>
+	function modificaMarca() {
+  var x = document.getElementById("marca").value;
+ ;
+  
+}
+	function modificaQuantita() {
+		  var x = document.getElementById("quantita").value;
+		 ;
+		  //bean.setQuantita(x);
+		}
+	function modificaFoto() {
+		  var x = document.getElementById("foto").value;
+		 ;
+		  //bean.setFoto(x);
+		}
+	function modificaModello() {
+		  var x = document.getElementById("modello").value;
+		 ;
+		  //bean.setModello(x);
+		}
+	function modificaTaglia() {
+		  var x = document.getElementById("Taglia").value;
+		 ;
+		  //bean.setTaglia(x);
+		}
+	function modificaColore() {
+		  var x = document.getElementById("Colore").value;
+		 ;
+		  //bean.setColore(x);
+		}
+	</script>
 
 </body>
 </html>
