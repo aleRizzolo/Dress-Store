@@ -13,33 +13,6 @@
 <%@ include file="header.jsp" %>
 <%@ page import = "java.util.*, model.indirizzo.*, model.ordine.*, model.prodotto.*, model.carta.*,model.carrello.*, model.utente.*,java.text.DecimalFormat" %>
 
-<%	
-UtenteModel<UtenteBean> model = new UtenteModelDM();
-UtenteBean utente = new UtenteBean();
-//utente= model.doRetrieveByEmail((String)session.getAttribute("email"));
-	
-String email = (String)session.getAttribute("email");
-	System.out.println(email);
-	int flag= (int)session.getAttribute("tipo"); //
-	System.out.println(flag);
-	
-if(email !=null)
-{
-	
-	if(tipo==2){
-		System.out.println("loggato come magazziniere");
-	}
-	else
-		
-		response.sendRedirect("index.jsp");
-}
-
-else {
-	
-	response.sendRedirect("index.jsp");
-}
-%>
-
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -142,14 +115,7 @@ else {
     <div class="row">
         <div class="col-md-3 col-sm-6">
             <div class="product-grid6">
-            <%--
-		if(products.size() > 0) {
-		//ok
-		Iterator<?> it = products.iterator();
-		
-		while(it.hasNext()) {
-			ProdottoBean bean = (ProdottoBean) it.next();
-*/	--%><form action="ProductControl" method="post">
+           <form action="ProductControl" method="post">
                 <div class="product-image6">
                     <a href="modificaProdotto.jsp">
                         <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo10/images/img-2.jpg" <%--src="<%=bean.getFoto()--%>>
@@ -164,13 +130,7 @@ else {
                 </form>
             </div>
         </div>
-        <%-- 		} 
-		} else {
-	--%>	
-		<%--<tr>
-			<td colspan="4">No product available</td>
-		</tr>--%>
-<%--/*}*/--%> 
+       
         <div class="col-md-3 col-sm-6">
             <div class="product-grid6">
                 <div class="product-image6">
