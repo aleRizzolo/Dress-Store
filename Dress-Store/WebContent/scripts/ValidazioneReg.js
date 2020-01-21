@@ -54,6 +54,7 @@ function controlloEmail()
 	var lettere5=/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-]{2,})+\.)+([a-zA-Z0-9]{2,})+$/;
 	var email=document.registrazione.email.value;
 	if(!email.match(lettere5))
+		if(email.match(lettere10)){
 	{
 		document.registrazione.email.style.borderColor="red";
 		return false;
@@ -64,7 +65,7 @@ function controlloEmail()
 		return true;
 	}
 }
-
+}
 
 
 
