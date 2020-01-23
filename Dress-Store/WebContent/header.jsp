@@ -117,8 +117,24 @@
     %>
       <li><a href=<%= areaUt %>><font color= GRAY><span class="glyphicon glyphicon-user" name="areaUtente"></span> Area Utente</font></a></li>
       <li><a href= <%= autCtrl %> ><font color= GRAY><span class="glyphicon glyphicon-log-in"></span> <%= aut %></font></a></li>
-      <li><a><font color= BLACK> Benvenuto <%=session.getAttribute("nome") %> </font></a></li>
-    </ul>
+      
+      <%
+      if(session.getAttribute("nome") == null){
+      %>
+      <li><a><font color= BLACK>Accedi al sito</font></a></li>
+      <%
+      }
+      %>
+      
+      <% 
+      if (session.getAttribute("nome") != null){
+      %>
+      <li><a><font color= BLACK> Benvenuto <%= session.getAttribute("nome") %> </font></a></li>
+    <%
+    } 
+    %>
+    
+  </ul>
   </div>
   <script src="script/jquery.js" ></script>
 </nav>
