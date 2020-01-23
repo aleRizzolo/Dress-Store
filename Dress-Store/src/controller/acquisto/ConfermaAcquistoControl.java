@@ -47,5 +47,24 @@ public class ConfermaAcquistoControl extends HttpServlet{
 							// TODO Auto-generated catch block
 							e.printStackTrace();
 						}
+						request.getSession().removeAttribute("indirizzo");
+						request.getSession().removeAttribute("carta");
+						request.getSession().removeAttribute("cart");
+						request.getSession().setAttribute("cart", cart);
 						
+						RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/acquisto_completato.jsp");
+						dispatcher.forward(request, response); // passo la chiamata alla jsp
+					}
+					System.out.println("cart");
+				}
+				System.out.println("id");
+			}
+			System.out.println("carta");
+		}
+		System.out.println("indirizzo");
+	}
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+		doGet(request, response);
+	}
 }
