@@ -12,7 +12,9 @@
 <%@ page import = "java.util.*, model.indirizzo.*, model.ordine.*, model.prodotto.*, model.carta.*,model.carrello.*, model.utente.*,java.text.DecimalFormat" %>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-   
+<%		ProdottoModel<ProdottoBean>  products = new ProdottoModelDM();
+    	Collection<ProdottoBean> prod = products.doRetrieveAllPrezzoZero();
+%>    
 
 <%@ include file="header.jsp" %>
 
@@ -24,7 +26,15 @@
     <div class="container">
      <h3 class="h3">Prodotti</h3>
 
-    
+ <%
+		if((products != null) && (prod.size() >= 0)) {
+		Iterator<?> it = prod.iterator();
+		DecimalFormat formatter = new DecimalFormat("#0.00");
+		
+		while(it.hasNext()) {
+			ProdottoBean bean = (ProdottoBean) it.next();
+%>
+       
     <div class="row">
         <div class="col-md-3 col-sm-6">
             <div class="product-grid6">

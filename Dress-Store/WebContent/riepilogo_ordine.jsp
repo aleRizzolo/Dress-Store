@@ -10,7 +10,21 @@
 <body>
 <%@ include file="header.jsp" %>
 <%@ page import = "java.util.*, model.indirizzo.*, model.ordine.*, model.prodotto.*, model.carta.*,model.carrello.*, java.text.DecimalFormat" %>
+<%
+if(request.getSession().getAttribute("tipo") != null){
+	int tipo = (int) session.getAttribute("tipo");
+	if( tipo ==2 || tipo ==3 || tipo == 4)
+		response.sendRedirect("index.jsp");
+}
+%>
+<% 
+	Carrello cart = (Carrello) session.getAttribute("cart");
+	List<ProdottoInCarrello> prodcart = cart.ottieniElem();
+	DecimalFormat formatter = new DecimalFormat("#0.00");
 
+	IndirizzoBean indirizzo = (IndirizzoBean) request.getSession().getAttribute("indirizzo");
+	CartaDiCreditoBean carta = (CartaDiCreditoBean) request.getSession().getAttribute("carta");
+%>
 <hr>
 <h3 class="scrittacarrello , bordo1" >&emsp; &emsp; &emsp;RIEPILOGO ORDINE</h3>
 <hr>
@@ -42,7 +56,11 @@
  
   <tbody class="bordo1" id="ye">
   
-
+<%
+			for(ProdottoInCarrello beancart : prodcart) {
+				System.out.println(prodcart);
+		
+%>
 	  <tr>	 
 	      <td scope="row">
 	      			<img src="<%= beancart.getFoto() %>" width="10%" style="float:left;">  
