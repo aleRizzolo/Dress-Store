@@ -24,6 +24,8 @@ public class LogoutControl extends HttpServlet{
 		request.getSession().setAttribute("id", null);
 		request.getSession().removeAttribute("email");
 		request.getSession().setAttribute("email", null);
+		request.getSession().removeAttribute("nome");
+		request.getSession().setAttribute("nome", null);
 		RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/index.jsp");
 		dispatcher.forward(request, response); // passo la chiamata alla jsp
 	}
