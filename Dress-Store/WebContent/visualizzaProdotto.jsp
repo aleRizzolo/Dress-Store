@@ -20,7 +20,7 @@ if(request.getSession().getAttribute("tipo") != null){
 	int tipo = (int) session.getAttribute("tipo");
 	if( tipo ==2 || tipo ==3 || tipo == 4)
 		response.sendRedirect("index.jsp");
-
+}
 %>
 	<form action="CartControl" method="get">
 	
