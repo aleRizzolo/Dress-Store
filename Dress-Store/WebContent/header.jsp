@@ -43,6 +43,13 @@
 	    		areaUt="managerPage.jsp";
 	    		autCtrl="LogoutControl";
 	    		break;
+	    	
+               case 4:
+	    		aut="Logout";
+	    		areaUt="proprietarioPage.jsp";
+	    		autCtrl="LogoutControl";
+	    		break;
+	    		
 	    	default:
 	    		areaUt="login.jsp";
 		}
