@@ -16,7 +16,7 @@ function controlloEmail()
 function controlloPassword()
 {
     var password=document.login.password.value;
-	if(password.length<1)
+	if(password.length<7)
 	{
 		document.login.password.style.borderColor="red";
 		return false;
