@@ -17,5 +17,5 @@ public class DbConnectionTest {
     Connection con = db.getConnection();
     assertNotNull(con);
       }
-	}
+    }
 
