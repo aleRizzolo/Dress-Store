@@ -16,7 +16,7 @@ function controlloNumero()
 function controlloAnno()
 {
 	var anno=document.aggiungiCarta.anno.value;
-	if(anno<=2019 || anno>2030)
+	if(anno<2020 || anno>2030)
 	{
 		document.aggiungiCarta.anno.style.borderColor="red";
 		return false;
