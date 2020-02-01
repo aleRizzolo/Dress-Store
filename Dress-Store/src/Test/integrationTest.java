@@ -19,7 +19,7 @@ import org.junit.Test;
 public class integrationTest {
 	
 	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver","C:\\SeleniumDrivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\Davide\\Desktop\\chromedriver_win32\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         String baseUrl="http://localhost:8080/Dress-Store/login.jsp ";
         
@@ -33,7 +33,6 @@ public class integrationTest {
 		String actualTitle = driver.getTitle();
 		System.out.println("Test Failed");
 		
-		//driver.close ();
 		
 		baseUrl="http://localhost:8080/Dress-Store/registrazione.jsp ";
 		driver.get(baseUrl);
@@ -66,15 +65,13 @@ public class integrationTest {
 	         
 	         nome.sendKeys("nome");
 	         cognome.sendKeys("cognome");
-	         data.sendKeys("12/11/18");
+	         data.sendKeys("12/11/1918");
 	         email.sendKeys("otto@otto.it");
+	         password.sendKeys("Password1");
 	         
 	         registrati.click();
 	         
-	         password.sendKeys("password");
 	         
-	         registrati.click();
-
 	         driver.close();
 	         
 	}
