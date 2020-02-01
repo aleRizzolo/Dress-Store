@@ -67,7 +67,7 @@ public class integrationTest {
 	         nome.sendKeys("nome");
 	         cognome.sendKeys("cognome");
 	         data.sendKeys("12/11/1918");
-	         email.sendKeys("l@otto.it");
+	         email.sendKeys("ale.yu@otto.it");
 	         password.sendKeys("Password1");
 	         
 	         registrati.click();
@@ -114,7 +114,7 @@ public class integrationTest {
 	         
 	         nomeC.sendKeys("Alessio");
 	         cognomeC.sendKeys("Rossi");
-	         numCarta.sendKeys("1238475638294929");
+	         numCarta.sendKeys("1238475490590070");
 	         cvv.sendKeys("245");
 	         anno.sendKeys("2020");
 	         mese.sendKeys("12");
@@ -123,6 +123,34 @@ public class integrationTest {
 	         invia.click();
 	         
 	         driver.close();
+	         
+	        /* baseUrl = "localhost:8080/Dress-Store/carrello.jsp";
+	         
+	         WebElement taglia=driver.findElement(By.name("taglia"));
+	         
+	         WebElement aggiungiCarrello=driver.findElement(By.name("invia"));
+	         
+	         WebElement beanType=driver.findElement(By.name("beantype"));
+	         
+	         beanType.click();
+	         aggiungiCarrello.click();
+	         
+	         WebElement procedi=driver.findElement(By.name("ProcediAcquisto"));
+	         procedi.click();
+	         
+	         WebElement indirizzoBtn=driver.findElement(By.name("indirizzo"));
+	         indirizzoBtn.click();
+	         
+	         WebElement sx=driver.findElement(By.id("sx"));
+	         sx.click();
+	         
+	         WebElement carta=driver.findElement(By.name("carta"));
+	         carta.click();
+	         
+	         WebElement sxProcedi=driver.findElement(By.name("sx"));
+	         sxProcedi.click();
+	         
+	         driver.close();*/
 	}
  
 }
