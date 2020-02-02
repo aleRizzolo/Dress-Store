@@ -123,8 +123,8 @@ public class integrationTest {
 	         invia.click();
 	         
 	         driver.close();
-	       /*  
-	         baseUrl = "localhost:8080/Dress-Store/carrello.jsp";
+	         
+	       /*  baseUrl = "localhost:8080/Dress-Store/carrello.jsp";
 	         
 	         WebElement taglia=driver.findElement(By.name("taglia"));
 	         
