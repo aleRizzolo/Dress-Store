@@ -13,5 +13,10 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="C:/Users/Alessio/eclipse (web)/plugins/junit-4.10.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Alessio/Desktop/selenium-java.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Alessio/Desktop/selenium-server-standalone-2.53.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Alessio/Desktop/selenium-java-3.141.59.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Alessio/Desktop/org.json-20120521.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

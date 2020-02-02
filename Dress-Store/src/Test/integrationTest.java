@@ -67,7 +67,7 @@ public class integrationTest {
 	         nome.sendKeys("nome");
 	         cognome.sendKeys("cognome");
 	         data.sendKeys("12/11/1918");
-	         email.sendKeys("ale.rhui@otto.it");
+	         email.sendKeys("ale.rgg@otto.it");
 	         password.sendKeys("Password1");
 	         
 	         registrati.click();
@@ -114,7 +114,7 @@ public class integrationTest {
 	         
 	         nomeC.sendKeys("Alessio");
 	         cognomeC.sendKeys("Rossi");
-	         numCarta.sendKeys("1209475790590070");
+	         numCarta.sendKeys("1209775790590070");
 	         cvv.sendKeys("245");
 	         anno.sendKeys("2020");
 	         mese.sendKeys("12");
@@ -124,7 +124,7 @@ public class integrationTest {
 	         
 	         driver.close();
 	         
-	         /*baseUrl = "localhost:8080/Dress-Store/carrello.jsp";
+	      /*   baseUrl = "localhost:8080/Dress-Store/carrello.jsp";
 	         
 	         WebElement taglia=driver.findElement(By.name("taglia"));
 	         
